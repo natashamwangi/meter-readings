@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nancy.loginregister" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.nancy.loginregister.models.VolleyController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo4"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!--  Entry for MainActivity.class -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/home"
+            android:launchMode="singleTop">
+        </activity>
+
+        <!--  Entry for LoginActivity.class -->
+        <activity android:name=".activity.Login"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--  Entry for RegisterActivity.class -->
+        <activity android:name=".activity.Register"
+            android:label="Register"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <!--  Entry for BalanceInquiry.class -->
+        <activity
+            android:name=".activity.BalanceInquiry"
+            android:label="@string/home"
+            android:launchMode="singleTop">
+        </activity>
+
+        <!--  Entry for Complaints.class -->
+        <activity
+            android:name=".activity.Complaints"
+            android:label="@string/home"
+            android:launchMode="singleTop">
+        </activity>
+
+        <!--  Entry for EditReadings.class -->
+        <activity
+            android:name=".activity.EditReadings"
+            android:label="@string/home"
+            android:launchMode="singleTop">
+        </activity>
+
+        <!--  Entry for MakeReading.class -->
+        <activity
+            android:name=".activity.MakeReading"
+            android:label="@string/home"
+            android:launchMode="singleTop">
+        </activity>
+
+        <!--  Entry for Report.class -->
+        <activity
+            android:name=".activity.Report"
+            android:label="@string/home"
+            android:launchMode="singleTop">
+        </activity>
+    </application>
+
+</manifest>

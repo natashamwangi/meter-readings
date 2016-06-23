@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        tools:context="${relativePackage}.${activityClass}">
+
+        <!--  Header Starts-->
+        <LinearLayout  android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:paddingTop="5dip"
+            android:background="@color/abc_search_url_text_normal"
+            android:paddingBottom="5dip"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="METER ENQUIRE"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                android:textSize="30dp"
+                android:textStyle="italic"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+        <!--  Header Ends -->
+        <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector"
+        />
+
+        </LinearLayout>
+
+</RelativeLayout>
+</ScrollView><!-- From: file:/C:/Users/Nancy/AndroidStudioProjects/LoginRegister/app/src/main/res/layout/activity_complaints.xml -->

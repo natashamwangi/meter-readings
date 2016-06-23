@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        tools:context="${relativePackage}.${activityClass}">
+
+        <!--  Header Starts-->
+        <LinearLayout  android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:paddingTop="5dip"
+            android:background="@color/abc_search_url_text_normal"
+            android:paddingBottom="5dip"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="METER ENQUIRE"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                android:textSize="30dp"
+                android:textStyle="italic"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+        <!--  Header Ends -->
+
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Home Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <!-- Welcome Note -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="20dp"
+                android:text="Welcome" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+            <!--  Make Readings Button -->
+            <Button
+                android:id="@+id/make_readings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Make Readings"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dip"/>
+
+
+            <!--  Balance Inquiry Button -->
+            <Button
+                android:id="@+id/balance_inquiry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Balance Enquiry"
+                android:layout_marginBottom="20dip"/>
+
+
+            <!-- Report Complaints Button -->
+            <Button
+                android:id="@+id/report_complaint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Report/Launch Complaints"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="10dip"/>
+
+
+            <!-- Edit Readings Button -->
+            <Button android:id="@+id/edit_readings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Edit Readings"/>
+
+
+            <!-- Complaints Button -->
+            <Button android:id="@+id/complaints"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="Complaints"/>
+
+            <!-- Link to Logout Screen -->
+            <TextView android:id="@+id/tvLogout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:layout_marginBottom="40dip"
+                android:text="Logout"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:textColor="#025f7c"/>
+
+        </LinearLayout>
+        <!-- Home Form Ends -->
+
+    </RelativeLayout>
+</ScrollView><!-- From: file:/C:/Users/Nancy/AndroidStudioProjects/LoginRegister/app/src/main/res/layout/activity_main.xml -->

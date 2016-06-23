@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Meter Enquire</string>
+    <string name="login">Login to your Account</string>
+    <string name="home">Home</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_email">Enter your Email Account</string>
+    <string name="hint_password">Enter your Password</string>
+    <string name="hint_name">Enter your Full Name</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+
+</resources>
